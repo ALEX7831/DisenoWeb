@@ -1,0 +1,97 @@
+:root { --color-primario: hsl(230, 60%, 50%);
+--color-acento: hsl(45, 90% , 55%);
+--color-texto: hsl(220, 15%,20%);
+--color-fondo: hsl(220, 20%, 97%);}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+}
+
+.hero{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(0,0,0,0.72)),
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToysx1LlhspC0o41ilvGwesAXGKGpSEhhX4DmUTRbquw&s=10");
+    background-size: cover;
+    background-position: center;
+    min-height: 480px;
+    color: white;
+    padding: 48px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero-content { max-width: 600px; }
+.hero-tag { margin: 0 0 12px; font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+.hero h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 4.5rem); line-height: 1.05; }
+.hero-content > p:not(.hero-tag) { margin: 20px 0 28px; font-size: 1.1rem; line-height: 1.5; }
+.hero-button { display: inline-block; padding: 12px 22px; border-radius: 8px; background: var(--color-acento); color: var(--color-texto); font-weight: 700; text-decoration: none; }
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.product-card{
+    background: white;
+    border: 2px solid var(--color-primario);
+    border-radius:12px;
+    padding: 24px;
+    margin: 16px;
+    width: 260px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+
+
+.card-image {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: var(--color-primario);
+}
+
+.product-desc {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.product-price {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-price small {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.btn-comprar {
+    background-color: var(--color-acento);
+    color: var(--color-texto);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-comprar:hover {
+    opacity: 0.85;
+}
